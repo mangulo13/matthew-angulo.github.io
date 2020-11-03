@@ -1,26 +1,34 @@
 ---
 title: "Work Experience"
 output: 
-  html_document 
+  html_document:
+    toc: true
+    toc_float: true
 
 ---
 
-My education background consists of public health and premedical studies with an emphasis on sociology. For an summary of my coursework please see below <br>
+While still early in my career, I have held a variety of professional positions since college graduation. 
 
-## Courses {.tabset}
+## NYC Health & Hospitals' Test & Trace Corps
 
-### Epidemiology
+<center>
+<br><img src="images/T&T.jpg"  style="width:35%"><br><br>
+</center>
 
-* Foundations of Epidemiology
+### COVID-19 Case Investigator
 
-### Biostatistics
+As a contact tracer for NYCHHC I have conducted over 500 interviews with laboratory confirmed COVID-19 cases, presumed cases, and close contacts. As a contact tracer for NYCHHC I have conducted over 500 interviews with laboratory confirmed COVID-19 cases, presumed cases, and close contactsAs a contact tracer for NYCHHC I have conducted over 500 interviews with laboratory confirmed COVID-19 cases, presumed cases, and close contacts
 
-* Analysis of categorical data
-* Data science
+## City Year New York
 
-### Sociology
+<center>
+<br><img src="images/CY.jpg"  style="width:35%"><br><br>
+</center>
 
-* Life course
+### Impact Manager 
 
+As an impact manager with City Year NYC As an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYC
 
-## <br><br> This is a new section again!
+### AmeriCorps Member
+
+As an AmeriCorps Member with City Year NYC As an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYC

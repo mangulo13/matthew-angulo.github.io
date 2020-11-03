@@ -1,26 +1,61 @@
 ---
 title: "Education Background"
 output: 
-  html_document 
+  html_document:
+    toc: true
+    toc_float: true
 
 ---
 
-My education background consists of public health and premedical studies with an emphasis on sociology. For an summary of my coursework please see below <br>
+My education background consists of public health and premedical studies with an emphasis on sociology. For an summary of my coursework please see below <br><br>
 
-## Courses {.tabset}
+## Columbia University: 2019 - 2021
 
-### Epidemiology
+<center>
+<br><img src="images/mailman.jpg"  style="width:75%"><br><br>
+</center>
+
+While at Mailman School of Public Health I have done all sorts of amazing things. Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text 
+<br>
+
+### Courses {.tabset}
+
+#### Epidemiology
 
 * Foundations of Epidemiology
 
-### Biostatistics
+#### Biostatistics
 
 * Analysis of categorical data
 * Data science
 
-### Sociology
+#### Programming
 
 * Life course
 
 
-## <br><br> This is a new section again!
+<br><br><br>
+
+## University of Notre Dame : 2013 - 2017
+<center>
+<br><img src="images/ND.png"  style="width:75%"><br><br>
+</center>
+
+Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text 
+
+<br>
+
+### Courses {.tabset}
+
+#### Natural Sciences
+
+* Foundations of Epidemiology
+
+#### Social Sciences
+
+* Analysis of categorical data
+* Data science
+
+#### Math & Statistics
+
+* Life course

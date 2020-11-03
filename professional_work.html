@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -250,6 +253,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -257,6 +323,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -333,31 +409,30 @@ $(document).ready(function () {
 </div>
 
 
-<p>My education background consists of public health and premedical studies with an emphasis on sociology. For an summary of my coursework please see below <br></p>
-<div id="courses" class="section level2 tabset">
-<h2>Courses</h2>
-<div id="epidemiology" class="section level3">
-<h3>Epidemiology</h3>
-<ul>
-<li>Foundations of Epidemiology</li>
-</ul>
-</div>
-<div id="biostatistics" class="section level3">
-<h3>Biostatistics</h3>
-<ul>
-<li>Analysis of categorical data</li>
-<li>Data science</li>
-</ul>
-</div>
-<div id="sociology" class="section level3">
-<h3>Sociology</h3>
-<ul>
-<li>Life course</li>
-</ul>
+<p>While still early in my career, I have held a variety of professional positions since college graduation.</p>
+<div id="nyc-health-hospitals-test-trace-corps" class="section level2">
+<h2>NYC Health &amp; Hospitals’ Test &amp; Trace Corps</h2>
+<center>
+<br><img src="images/T&T.jpg"  style="width:35%"><br><br>
+</center>
+<div id="covid-19-case-investigator" class="section level3">
+<h3>COVID-19 Case Investigator</h3>
+<p>As a contact tracer for NYCHHC I have conducted over 500 interviews with laboratory confirmed COVID-19 cases, presumed cases, and close contacts. As a contact tracer for NYCHHC I have conducted over 500 interviews with laboratory confirmed COVID-19 cases, presumed cases, and close contactsAs a contact tracer for NYCHHC I have conducted over 500 interviews with laboratory confirmed COVID-19 cases, presumed cases, and close contacts</p>
 </div>
 </div>
-<div id="this-is-a-new-section-again" class="section level2">
-<h2><br><br> This is a new section again!</h2>
+<div id="city-year" class="section level2">
+<h2>City Year</h2>
+<center>
+<br><img src="images/CY.jpg"  style="width:35%"><br><br>
+</center>
+<div id="impact-manager" class="section level3">
+<h3>Impact Manager</h3>
+<p>As an impact manager with City Year NYC As an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYC</p>
+</div>
+<div id="americorps-member" class="section level3">
+<h3>AmeriCorps Member</h3>
+<p>As an AmeriCorps Member with City Year NYC As an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYCAs an impact manager with City Year NYC</p>
+</div>
 </div>
 
 
@@ -371,6 +446,8 @@ $(document).ready(function () {
 </footer>
 
 
+</div>
+</div>
 
 </div>
 
@@ -403,6 +480,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
