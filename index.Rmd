@@ -9,7 +9,9 @@ output:
 
 # My name is Matthew Angulo
 
-I am an Infectious Disease graduate student at Columbia University's Mailman School of Public Health. <br><br><br><br>
+I am an Infectious Disease graduate student at Columbia University's Mailman School of Public Health. This website serves as a summary of my personal and professional interests, accomplishments, and aspirations. <br><br>
+
+As I continue in my career, I will update this site. 
 
 
 
@@ -20,16 +22,6 @@ I am an Infectious Disease graduate student at Columbia University's Mailman Sch
 
 
 
-
-
-
-## Here's a sub section
-
-And here's more text... 
-
-```{r}
-rnorm(10)
-```
 
 ## Links to other websites
 
@@ -48,17 +40,7 @@ And more!
 
 
 
-## Quarterly Results {.tabset}
 
-### By Product
-
-This is tab number one!
-
-### By Region
-
-This is tab number two!
-
-## This is a new section again!
 
 
 

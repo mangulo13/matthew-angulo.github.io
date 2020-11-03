@@ -4,22 +4,7 @@ output:
   html_document 
 
 ---
-My resume is attached <br>
 
-## Courses {.tabset}
+A downloadable copy of my extended resume can be found [here](resources/M Angulo Resume.pdf)
 
-### Epidemiology
-
-* Foundations of Epidemiology
-
-### Biostatistics
-
-* Analysis of categorical data
-* Data science
-
-### Sociology
-
-* Life course
-
-
-## <br><br> This is a new section again!
+![](./resources/M Angulo Resume.pdf){width=100% height=800}
