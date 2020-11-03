@@ -1,0 +1,25 @@
+---
+title: "Resume"
+output: 
+  html_document 
+
+---
+My resume is attached <br>
+
+## Courses {.tabset}
+
+### Epidemiology
+
+* Foundations of Epidemiology
+
+### Biostatistics
+
+* Analysis of categorical data
+* Data science
+
+### Sociology
+
+* Life course
+
+
+## <br><br> This is a new section again!

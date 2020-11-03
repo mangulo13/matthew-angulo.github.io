@@ -1,0 +1,26 @@
+---
+title: "Education Background"
+output: 
+  html_document 
+
+---
+
+My education background consists of public health and premedical studies with an emphasis on sociology. For an summary of my coursework please see below <br>
+
+## Courses {.tabset}
+
+### Epidemiology
+
+* Foundations of Epidemiology
+
+### Biostatistics
+
+* Analysis of categorical data
+* Data science
+
+### Sociology
+
+* Life course
+
+
+## <br><br> This is a new section again!

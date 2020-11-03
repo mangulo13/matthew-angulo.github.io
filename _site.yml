@@ -1,0 +1,36 @@
+name: "Yay internet!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Personal"
+      href: personal.html
+    - text: "Professional"
+      menu: 
+      - text: "Work experience"
+        href: professional_work.html
+      - text: "Education"
+        href: professional_education.html
+      - text: "---"
+      - text: "Resume"
+        href: professional_resume.html
+    - text: "Dashboard"
+      href: dashboard.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<ma3997@columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/mangulo13/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/matthew-s-angulo/
+output:
+  html_document:
+    theme: yeti
+    include:
+      after_body: footer.html
+
+
+    
+    
+
+
+    
