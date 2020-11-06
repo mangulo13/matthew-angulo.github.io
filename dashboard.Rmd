@@ -1,5 +1,5 @@
 ---
-title: "Data at work"
+title: "Brooklyn Restaurant Inspections"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -12,69 +12,61 @@ output:
 library(tidyverse)
 library(plotly)
 library(flexdashboard)
-library(httr)
-library(jsonlite)
+library(p8105.datasets)
 
-get_all_inspections = function(url) {
-  
-  all_inspections = vector("list", length = 0)
-  
-  loop_index = 1
-  chunk_size = 50000
-  DO_NEXT = TRUE
-  
-  while (DO_NEXT) {
-    message("Getting data, page ", loop_index)
-    
-    all_inspections[[loop_index]] = 
-      GET(url,
-          query = list(`$order` = "zipcode",
-                       `$limit` = chunk_size,
-                       `$offset` = as.integer((loop_index - 1) * chunk_size)
-                       )
-          ) %>%
-      content("text") %>%
-      fromJSON() %>%
-      as_tibble()
-    
-    DO_NEXT = dim(all_inspections[[loop_index]])[1] == chunk_size
-    loop_index = loop_index + 1
-  }
-  
-  all_inspections
-  
-}
+rest_inspec
 
-url = "https://data.cityofnewyork.us/resource/43nn-pn8j.json"
-
-nyc_inspections = 
-  get_all_inspections(url) %>%
-  bind_rows()
-
-view(nyc_inspections)
+rest_inspec =
+  rest_inspec %>% 
+  select(action, boro, camis, critical_flag, cuisine_description, dba, score, violation_code, violation_description, zipcode, grade) %>% 
+  filter(boro == "BROOKLYN") %>% 
+  drop_na(grade)
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Food scores by zipcode in Brooklyn
 
 ```{r}
-
+rest_inspec %>% 
+  janitor::clean_names() %>% 
+  plot_ly(x = ~zipcode, y = ~score, color = ~grade, alpha = 0.5, 
+    type = "scatter", mode = "markers") %>% 
+  layout(xaxis = list(type = 'category', title = 'Zipcode'))
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Twenty most common cuisine types in Brooklyn
 
 ```{r}
+rest_inspec %>% 
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  top_n(20, cuisine_description) %>% 
+  plot_ly(x = ~cuisine_description, y = ~n, color = ~cuisine_description,
+          type = "bar", colors = "viridis", showlegend = F) %>% 
+  layout(xaxis = list(type = 'category', title = 'Cuisine Type'))
 
 ```
 
-### Chart C
+### Food scores of twenty most common cuisine types in Brookyln
 
 ```{r}
+top_cuisines =
+  rest_inspec %>% 
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  top_n(20, cuisine_description) 
 
+rest_inspec %>%
+  filter(cuisine_description %in% pull(top_cuisines,cuisine_description)) %>% 
+  plot_ly(y = ~score, x = ~cuisine_description, color = ~cuisine_description,
+          type = "box", ccolors = "viridis", showlegend = F) %>% 
+  layout(xaxis = list(type = 'category', title = 'Cuisine Type'))
 ```
+
+
 

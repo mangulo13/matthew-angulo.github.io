@@ -7,7 +7,9 @@ output:
 
 ---
 
-My education background consists of public health and premedical studies with an emphasis on sociology. For an summary of my coursework please see below <br><br>
+My education background is varied and ranges from coursework in the natural sciences and public health to social sciences and philosophy. For a summary of my epxperiences and courses while in both undergrad and graduate school see below. 
+
+<br><br>
 
 ## Columbia University: 2019 - 2021
 
@@ -15,23 +17,30 @@ My education background consists of public health and premedical studies with an
 <br><img src="images/mailman.jpg"  style="width:75%"><br><br>
 </center>
 
-While at Mailman School of Public Health I have done all sorts of amazing things. Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text 
+While at Mailman School of Public Health I have focusesd on infectious disease epidemiology and statistics. My purpose for returning to graduate school has been to acquire as many hard skills in epidemiology and outbreak investigation that is necessary for supproting the Bureau of Communicable Diseases at NYC Department of Health and Mental Hygiene. I have thoroughly enjoyed my time while at Mailman and have felt continuously impressed by the applicability of courses taken thus far.  
+
 <br>
 
 ### Courses {.tabset}
 
 #### Epidemiology
 
-* Foundations of Epidemiology
+* Epidemiology I
+* Epidemiology II
+* Epidemiology III
+* Molecular Epidemiology
+* Infectious Disease Epidemiology
 
 #### Biostatistics
 
-* Analysis of categorical data
-* Data science
+* Analysis of Categorical Data
+* Analysis of Quantitative Data
 
-#### Programming
 
-* Life course
+#### Data Science
+
+* Data Science in R
+* SAS Class
 
 
 <br><br><br>
@@ -41,7 +50,8 @@ While at Mailman School of Public Health I have done all sorts of amazing things
 <br><img src="images/ND.png"  style="width:75%"><br><br>
 </center>
 
-Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text Filler text 
+The four years I spent at Notre Dame were unfortuantely four of the longest years of my life that I did not quite enjoy. As a Georgia kid who was used to mild winters and no snow, four years of perpetual Midwest winters that lasted until May was very difficult for me. While some fond memories remain, such as football games and some social events. My undergraduate years were powerful in teaching what I do not enjoy. 
+
 
 <br>
 
@@ -49,13 +59,18 @@ Filler text Filler text Filler text Filler text Filler text Filler text Filler t
 
 #### Natural Sciences
 
-* Foundations of Epidemiology
+* Anatomy & Physiology
+* Biology
+* Physics
+* Chemistry 
 
 #### Social Sciences
 
-* Analysis of categorical data
-* Data science
+* Foundations of Sociology 
+* Life Course Sociology 
+* Criminology 
 
 #### Math & Statistics
 
-* Life course
+* Statistics for Social Sciences
+* STATA for Sociology

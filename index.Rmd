@@ -3,40 +3,33 @@ title: "Welcome!"
 output: 
   html_document 
 ---
+
 <center>
-<br><img src="images/background.jpg" alt="logo" style="width:95%"><br><br>
+<br><img src="images/Headshot.jpg" alt="logo" style="width:25%"><br><br>
 </center>
 
 # My name is Matthew Angulo
 
-I am an Infectious Disease graduate student at Columbia University's Mailman School of Public Health. This website serves as a summary of my personal and professional interests, accomplishments, and aspirations. <br><br>
+I am an Infectious Disease graduate student at Columbia University's Mailman School of Public Health. This website serves as a summary of my personal and professional interests, accomplishments, and aspirations. 
 
-As I continue in my career, I will update this site. 
+As I continue in my career, I will update this site with recent projects and data analysis. <br><br>
 
+This website consists of several sections including:
 
+* [An introduction to my personal goals and interests](personal.html) 
+* [An overview of my work experience ](professional_work.html)
+* [A summary of my academic background](professional_education.html)
+* [My resume](professional_resume.html)
+* [An example of my work in data analysis](dashboard.html)
+ 
+<br>
 
-
-
-
-
-
-
-
-
-## Links to other websites
-
-Let's link to useful tools for data science: 
-
-* [Google](https://www.google.com)
-* [P8105](https://p8105.com)
-
-Have to have https:// included in links
+I am eager to continue studies and work in infectious epidemiology. For any inquiries, please feel free to connect with me via [LinkedIn](https://www.linkedin.com/in/matthew-s-angulo/) or by [email.](mailto:<ma3997@columbia.edu>) Thank you and enjoy this site.
 
 
-## Link to page within the site
-[About me](about.html)
-
-And more!
+<center>
+<br><img src="images/background.jpg" alt="logo" style="width:95%"><br><br>
+</center>
 
 
 
